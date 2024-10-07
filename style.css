@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container1{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: opacity(30%); */
+
+}
+
+.card1{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 400px;
+    outline: 1px solid rgba(0, 0, 0, 0.222);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.248));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-input input{
+    height: 40px;
+    width: 220px;
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.174);
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.208));
+}
+
+.login button{
+    border: none;
+    background-color: rgb(17, 92, 255);
+    height: 40px;
+    width: 110px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login:hover button{
+    background-color: rgb(50, 114, 254);
+}
+
+.logo h1{
+    font-size: 2rem;
+    color: rgb(16, 112, 255);
+}
+
+.box1.anim{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 200px;
+    /* display: none; */
+    animation-name: loading;
+    animation-duration: 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    margin-top: -340px;
+    
+}
+
+
+.animate{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sukses{
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgba(0, 0, 0, 0.485);
+    color: rgb(0, 0, 0);
+    height: 200px;
+    width: 250px;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    margin-top: -450px;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.232));
+    display: none;
+    gap: 10px;
+}
+
+.sukses img{
+    height: 70px;
+    animation-name: ceklist;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.ok button{
+    border: none;
+    background-color: rgb(0, 255, 64);
+    height: 20px;
+    width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes ceklist{
+    from{
+        height: 20px;
+    }
+
+    to{
+        height: 70px;
+    }
+}
+
+
+@keyframes loading{
+    from{
+        margin-left: 200px;
+
+    }
+    to{
+        margin-right: 400px;
+    }
+}
+
+.gagal{
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgba(0, 0, 0, 0.289);
+    color: rgb(0, 0, 0);
+    height: 200px;
+    width: 250px;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    margin-top: -450px;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.232));
+    display: none;
+    gap: 10px;
+}
+
+.gagal img{
+    height: 70px;
+    animation-name: ceklist;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.check span{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.441);
+}
+
+.check input{
+    height: 15px;
+    width: 15px;
+}
+
+.back button{
+    border: none;
+    background-color: rgb(255, 19, 55);
+    height: 20px;
+    width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.back:hover button{
+    background-color: rgb(204, 0, 31);
+}
+
+@media (max-width:600px){
+    .card1{
+        width: 360px;
+    }
+}
+
+.lojin a{
+    color: blue;
+}
+
+.lojin:hover a{
+    color: rgb(0, 0, 121);
+    text-decoration: none;
+}
+
